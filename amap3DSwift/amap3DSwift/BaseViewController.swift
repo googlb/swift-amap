@@ -6,4 +6,15 @@
 //  Copyright © 2017年 BrodyGao. All rights reserved.
 //
 
-import Foundation
+import UIKit
+class BaseViewController: UIViewController {
+    override func viewDidLoad() {
+        let backItem = UIBarButtonItem.init(title: "返回", style: .done, target: self, action: #selector(self.backAction))
+        navigationItem.leftBarButtonItem = backItem
+        self.view.backgroundColor = UIColor.white
+    }
+    
+    func backAction(){
+        _ = self.navigationController?.popViewController(animated: true)
+    }
+}

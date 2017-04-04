@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6413BF77261D3C7FE7E5970C /* Pods_amap3DSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5559DC8E901FC6FC92A453C /* Pods_amap3DSwift.framework */; };
+		6738DDBF1E9248F3000DC282 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6738DDBE1E9248F3000DC282 /* APIKey.swift */; };
+		6738DDC21E924959000DC282 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6738DDC11E924959000DC282 /* BaseViewController.swift */; };
+		6738DDC41E924A47000DC282 /* SingleLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6738DDC31E924A47000DC282 /* SingleLocationViewController.swift */; };
 		67AD2D161E92481A00A9AE71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AD2D151E92481A00A9AE71 /* AppDelegate.swift */; };
 		67AD2D181E92481A00A9AE71 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AD2D171E92481A00A9AE71 /* ViewController.swift */; };
 		67AD2D1B1E92481A00A9AE71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67AD2D191E92481A00A9AE71 /* Main.storyboard */; };
@@ -15,6 +19,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		29A0074387F66F02ABEDEDDD /* Pods-amap3DSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-amap3DSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-amap3DSwift/Pods-amap3DSwift.release.xcconfig"; sourceTree = "<group>"; };
+		6738DDBE1E9248F3000DC282 /* APIKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
+		6738DDC11E924959000DC282 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		6738DDC31E924A47000DC282 /* SingleLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleLocationViewController.swift; sourceTree = "<group>"; };
+		6738DDC51E924C13000DC282 /* amap3DSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "amap3DSwift-Bridging-Header.h"; sourceTree = "<group>"; };
 		67AD2D121E92481A00A9AE71 /* amap3DSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = amap3DSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67AD2D151E92481A00A9AE71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		67AD2D171E92481A00A9AE71 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +31,8 @@
 		67AD2D1C1E92481A00A9AE71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		67AD2D1F1E92481A00A9AE71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		67AD2D211E92481A00A9AE71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A47616A152E8BEE33CA2D08B /* Pods-amap3DSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-amap3DSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-amap3DSwift/Pods-amap3DSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		A5559DC8E901FC6FC92A453C /* Pods_amap3DSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_amap3DSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +40,47 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6413BF77261D3C7FE7E5970C /* Pods_amap3DSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		55290EAB4ED23ADA9B0E0EF3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A47616A152E8BEE33CA2D08B /* Pods-amap3DSwift.debug.xcconfig */,
+				29A0074387F66F02ABEDEDDD /* Pods-amap3DSwift.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6738DDBC1E9248BE000DC282 /* config */ = {
+			isa = PBXGroup;
+			children = (
+				6738DDBE1E9248F3000DC282 /* APIKey.swift */,
+			);
+			name = config;
+			sourceTree = "<group>";
+		};
+		6738DDC01E924946000DC282 /* item */ = {
+			isa = PBXGroup;
+			children = (
+				6738DDC11E924959000DC282 /* BaseViewController.swift */,
+				6738DDC31E924A47000DC282 /* SingleLocationViewController.swift */,
+			);
+			name = item;
+			sourceTree = "<group>";
+		};
 		67AD2D091E92481A00A9AE71 = {
 			isa = PBXGroup;
 			children = (
 				67AD2D141E92481A00A9AE71 /* amap3DSwift */,
 				67AD2D131E92481A00A9AE71 /* Products */,
+				55290EAB4ED23ADA9B0E0EF3 /* Pods */,
+				D3C29DE32634F04CFE38BFF8 /* Frameworks */,
+				6738DDC51E924C13000DC282 /* amap3DSwift-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +95,8 @@
 		67AD2D141E92481A00A9AE71 /* amap3DSwift */ = {
 			isa = PBXGroup;
 			children = (
+				6738DDC01E924946000DC282 /* item */,
+				6738DDBC1E9248BE000DC282 /* config */,
 				67AD2D151E92481A00A9AE71 /* AppDelegate.swift */,
 				67AD2D171E92481A00A9AE71 /* ViewController.swift */,
 				67AD2D191E92481A00A9AE71 /* Main.storyboard */,
@@ -64,6 +107,14 @@
 			path = amap3DSwift;
 			sourceTree = "<group>";
 		};
+		D3C29DE32634F04CFE38BFF8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A5559DC8E901FC6FC92A453C /* Pods_amap3DSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +122,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 67AD2D241E92481A00A9AE71 /* Build configuration list for PBXNativeTarget "amap3DSwift" */;
 			buildPhases = (
+				8291515AA5CF34769159C89E /* [CP] Check Pods Manifest.lock */,
 				67AD2D0E1E92481A00A9AE71 /* Sources */,
 				67AD2D0F1E92481A00A9AE71 /* Frameworks */,
 				67AD2D101E92481A00A9AE71 /* Resources */,
+				25AE5719AEBADD0AF976D075 /* [CP] Embed Pods Frameworks */,
+				73A3A9745ACCA6D6728A2AAF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -97,7 +151,13 @@
 					67AD2D111E92481A00A9AE71 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = ZXGCHY6G7F;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -132,12 +192,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		25AE5719AEBADD0AF976D075 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-amap3DSwift/Pods-amap3DSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		73A3A9745ACCA6D6728A2AAF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-amap3DSwift/Pods-amap3DSwift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8291515AA5CF34769159C89E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		67AD2D0E1E92481A00A9AE71 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				67AD2D181E92481A00A9AE71 /* ViewController.swift in Sources */,
+				6738DDC41E924A47000DC282 /* SingleLocationViewController.swift in Sources */,
+				6738DDC21E924959000DC282 /* BaseViewController.swift in Sources */,
+				6738DDBF1E9248F3000DC282 /* APIKey.swift in Sources */,
 				67AD2D161E92481A00A9AE71 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,26 +368,33 @@
 		};
 		67AD2D251E92481A00A9AE71 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A47616A152E8BEE33CA2D08B /* Pods-amap3DSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = ZXGCHY6G7F;
 				INFOPLIST_FILE = amap3DSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.BrodyGao.amap3DSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "amap3DSwift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		67AD2D261E92481A00A9AE71 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29A0074387F66F02ABEDEDDD /* Pods-amap3DSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = ZXGCHY6G7F;
 				INFOPLIST_FILE = amap3DSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.BrodyGao.amap3DSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "amap3DSwift-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -300,6 +418,7 @@
 				67AD2D261E92481A00A9AE71 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

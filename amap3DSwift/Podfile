@@ -6,6 +6,7 @@ target 'amap3DSwift' do
   use_frameworks!
 
   # Pods for amap3DSwift
-pod ‘AMap3DMap’
-pod ‘AMapLocation’
+pod 'AMap3DMap'
+pod 'AMapLocation'
+pod 'AMapSearch'
 end
