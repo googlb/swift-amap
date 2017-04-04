@@ -1,5 +1,5 @@
 # swift-amap
----- 
+
 [![DUB](https://img.shields.io/badge/Swift-3.1-orange.svg)]()
 [![GitHub issues](https://img.shields.io/github/issues/googlb/swift-amap.svg)](https://github.com/googlb/swift-amap/issues)
 [![GitHub stars](https://img.shields.io/github/stars/googlb/swift-amap.svg)](https://github.com/googlb/swift-amap/stargazers)
