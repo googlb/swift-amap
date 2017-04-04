@@ -9,5 +9,5 @@
 > swift-amap 根据官方demo swift版实现
 
 ## 文档
-[http://lbs.amap.com/api/ios-location-sdk/summary/](iOS 定位SDK > 概述)
+[http://lbs.amap.com/api/ios-location-sdk/summary/](iOS 定位SDK)
 1. 基础地图功能
