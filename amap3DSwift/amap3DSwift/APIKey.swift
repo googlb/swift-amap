@@ -7,5 +7,5 @@
 //
 import Foundation
 struct APIKey {
-    static let APIkey:NSString = "1dbcf80e3cb2bb693461b15c79a58fc4"
+    static let APIkey:NSString = ""
 }

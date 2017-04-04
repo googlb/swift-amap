@@ -100,6 +100,7 @@ class SingleLocationViewController: BaseViewController,MAMapViewDelegate,AMapSea
             }else{
                 annotation.title = String.init(format: "lat:%f;lon:%f", location!.coordinate.latitude,location!.coordinate.longitude)
                 print("location:\(location)")
+                annotation.subtitle = String.init(format: "accuracy:%.2fm", location!.horizontalAccuracy)
             }
             self.addAnnotationToMapView(annotation: annotation)
         })
