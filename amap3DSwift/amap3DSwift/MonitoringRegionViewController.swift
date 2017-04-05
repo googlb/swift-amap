@@ -7,3 +7,8 @@
 //
 
 import Foundation
+class MonitoringRegionViewController: BaseViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+}

@@ -127,7 +127,7 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
         }
         
         let childVc = childVcType.init()
-        childVc.title = "单次定位展示"
+        childVc.title = self.items[indexPath.section][indexPath.row] as? String
         self.navigationController?.pushViewController(childVc, animated: true)
     }
     

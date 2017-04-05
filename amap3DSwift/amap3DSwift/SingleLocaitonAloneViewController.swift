@@ -7,3 +7,8 @@
 //
 
 import Foundation
+class SingleLocaitonAloneViewController: BaseViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+}

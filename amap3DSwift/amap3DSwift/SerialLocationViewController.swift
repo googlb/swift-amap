@@ -7,3 +7,8 @@
 //
 
 import Foundation
+class SerialLocationViewController: BaseViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+}
