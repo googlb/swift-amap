@@ -22,6 +22,11 @@ class SingleLocationViewController: BaseViewController,MAMapViewDelegate,AMapSea
         
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewDidDisappear(true)
+        self.clearAction()
+    }
+    
     
     
     func initMapView(){

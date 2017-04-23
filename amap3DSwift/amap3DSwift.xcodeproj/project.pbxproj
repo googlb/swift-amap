@@ -16,6 +16,9 @@
 		67AD2D1B1E92481A00A9AE71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67AD2D191E92481A00A9AE71 /* Main.storyboard */; };
 		67AD2D1D1E92481A00A9AE71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67AD2D1C1E92481A00A9AE71 /* Assets.xcassets */; };
 		67AD2D201E92481A00A9AE71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67AD2D1E1E92481A00A9AE71 /* LaunchScreen.storyboard */; };
+		67D08EBB1E954762009FBCA2 /* SingleLocaitonAloneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D08EBA1E954762009FBCA2 /* SingleLocaitonAloneViewController.swift */; };
+		67D08EBD1E954774009FBCA2 /* SerialLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D08EBC1E954774009FBCA2 /* SerialLocationViewController.swift */; };
+		67D08EBF1E954781009FBCA2 /* MonitoringRegionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D08EBE1E954781009FBCA2 /* MonitoringRegionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +34,9 @@
 		67AD2D1C1E92481A00A9AE71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		67AD2D1F1E92481A00A9AE71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		67AD2D211E92481A00A9AE71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67D08EBA1E954762009FBCA2 /* SingleLocaitonAloneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleLocaitonAloneViewController.swift; sourceTree = "<group>"; };
+		67D08EBC1E954774009FBCA2 /* SerialLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SerialLocationViewController.swift; sourceTree = "<group>"; };
+		67D08EBE1E954781009FBCA2 /* MonitoringRegionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonitoringRegionViewController.swift; sourceTree = "<group>"; };
 		A47616A152E8BEE33CA2D08B /* Pods-amap3DSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-amap3DSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-amap3DSwift/Pods-amap3DSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		A5559DC8E901FC6FC92A453C /* Pods_amap3DSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_amap3DSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -69,6 +75,9 @@
 			children = (
 				6738DDC11E924959000DC282 /* BaseViewController.swift */,
 				6738DDC31E924A47000DC282 /* SingleLocationViewController.swift */,
+				67D08EBA1E954762009FBCA2 /* SingleLocaitonAloneViewController.swift */,
+				67D08EBC1E954774009FBCA2 /* SerialLocationViewController.swift */,
+				67D08EBE1E954781009FBCA2 /* MonitoringRegionViewController.swift */,
 			);
 			name = item;
 			sourceTree = "<group>";
@@ -245,9 +254,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67D08EBF1E954781009FBCA2 /* MonitoringRegionViewController.swift in Sources */,
 				67AD2D181E92481A00A9AE71 /* ViewController.swift in Sources */,
+				67D08EBD1E954774009FBCA2 /* SerialLocationViewController.swift in Sources */,
 				6738DDC41E924A47000DC282 /* SingleLocationViewController.swift in Sources */,
 				6738DDC21E924959000DC282 /* BaseViewController.swift in Sources */,
+				67D08EBB1E954762009FBCA2 /* SingleLocaitonAloneViewController.swift in Sources */,
 				6738DDBF1E9248F3000DC282 /* APIKey.swift in Sources */,
 				67AD2D161E92481A00A9AE71 /* AppDelegate.swift in Sources */,
 			);
@@ -293,6 +305,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -342,6 +355,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
