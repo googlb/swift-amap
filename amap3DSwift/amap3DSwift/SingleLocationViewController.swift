@@ -11,7 +11,7 @@ class SingleLocationViewController: BaseViewController,MAMapViewDelegate,AMapSea
     var mapView:MAMapView!
     var search:AMapSearchAPI!
     var locationManager:AMapLocationManager!
-    var completionBlock:AMapLocatingCompletionBlock!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()

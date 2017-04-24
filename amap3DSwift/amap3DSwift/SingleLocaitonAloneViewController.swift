@@ -9,7 +9,7 @@
 import UIKit
 class SingleLocaitonAloneViewController: BaseViewController ,AMapLocationManagerDelegate{
     var locationManager:AMapLocationManager!
-    var completionBlock:AMapLocatingCompletionBlock!
+
     lazy var displayLabel:UILabel = {
         let textLabel = UILabel.init()
         textLabel.frame = UIScreen.main.bounds
