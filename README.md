@@ -1,4 +1,5 @@
-![image](https://github.com/googlb/swift-amap/blob/master/MapIcon.png)
+<div align=center><img src="https://github.com/googlb/swift-amap/blob/master/MapIcon.png" alt="" /></div>
+
 # swift-amap
 
 [![DUB][image-1]]()
