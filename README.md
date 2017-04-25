@@ -1,4 +1,4 @@
-<div align=center><img src="https://github.com/googlb/swift-amap/blob/master/MapIcon.png" alt="" /></div>
+<div align=center><img width="400" src="https://github.com/googlb/swift-amap/blob/master/MapIcon.png" alt="" /></div>
 
 # swift-amap
 
