@@ -80,7 +80,7 @@ class SingleLocationViewController: BaseViewController,MAMapViewDelegate,AMapSea
             annotation.coordinate = location!.coordinate
             if ((regeocode) != nil)
             {
-                print("reGeocode:\(regeocode)");
+                print("reGeocode:\(String(describing: regeocode))");
                 annotation.title = regeocode?.formattedAddress
                 annotation.subtitle = String.init(format: "%@-%@-%.2fm", regeocode!.citycode,regeocode!.adcode,location!.horizontalAccuracy)
             }
@@ -99,12 +99,12 @@ class SingleLocationViewController: BaseViewController,MAMapViewDelegate,AMapSea
             annotation.coordinate = location!.coordinate
             if ((regeocode) != nil)
             {
-                print("reGeocode:\(regeocode)");
+                print("reGeocode:\(String(describing: regeocode))");
                 
                 
             }else{
                 annotation.title = String.init(format: "lat:%f;lon:%f", location!.coordinate.latitude,location!.coordinate.longitude)
-                print("location:\(location)")
+                print("location:\(String(describing: location))")
                 annotation.subtitle = String.init(format: "accuracy:%.2fm", location!.horizontalAccuracy)
             }
             self.addAnnotationToMapView(annotation: annotation)

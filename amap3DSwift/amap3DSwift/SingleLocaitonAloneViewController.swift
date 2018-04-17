@@ -73,7 +73,7 @@ class SingleLocaitonAloneViewController: BaseViewController ,AMapLocationManager
 
             if ((regeocode) != nil)
             {
-                print("reGeocode:\(regeocode)");
+                print("reGeocode:\(String(describing: regeocode))");
 
                 self.displayLabel.text = String.init(format: "%@ \n %@-%@-%.2fm",regeocode!.formattedAddress, regeocode!.citycode,regeocode!.adcode,location!.horizontalAccuracy)
             }
@@ -91,11 +91,11 @@ class SingleLocaitonAloneViewController: BaseViewController ,AMapLocationManager
 
             if ((regeocode) != nil)
             {
-                print("reGeocode:\(regeocode)");
+                print("reGeocode:\(String(describing: regeocode))");
                 
                 
             }else{
-                print("location:\(location)")
+                print("location:\(String(describing: location))")
                 self.displayLabel.text = String.init(format: "lat:%f;lon:%f \n accuracy:%.2fm", location!.coordinate.latitude,location!.coordinate.longitude,location!.horizontalAccuracy)
             }
 

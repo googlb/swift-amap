@@ -74,7 +74,7 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
             self.present(alertController, animated: true, completion: nil)
             
         }
-        AMapServices.shared().apiKey = APIKey.APIkey as String!
+        AMapServices.shared().apiKey = APIKey.APIkey as String?
     }
     
     // MARK: - UITableViewDataSource
