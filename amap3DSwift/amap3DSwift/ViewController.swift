@@ -47,10 +47,10 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
     }
     
     func initTableView(){
-        self.tableView = UITableView.init(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width, height: self.view.bounds.height), style: UITableViewStyle.grouped)
+        self.tableView = UITableView.init(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width, height: self.view.bounds.height), style: UITableView.Style.grouped)
         tableView.dataSource = self
         tableView.delegate = self
-        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.rowHeight = UITableView.automaticDimension
         
         self.view.addSubview(tableView)
     }
@@ -74,6 +74,7 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
             self.present(alertController, animated: true, completion: nil)
             
         }
+        //设置api key
         AMapServices.shared().apiKey = APIKey.APIkey as String?
     }
     

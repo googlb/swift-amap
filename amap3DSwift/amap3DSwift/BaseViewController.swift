@@ -14,7 +14,7 @@ class BaseViewController: UIViewController {
         self.view.backgroundColor = UIColor.white
     }
     
-    func backAction(){
+    @objc func backAction(){
         _ = self.navigationController?.popViewController(animated: true)
     }
 }

@@ -58,13 +58,13 @@ class SingleLocaitonAloneViewController: BaseViewController ,AMapLocationManager
         self.view.addSubview(displayLabel)
     }
     
-    func clearAction(){
+    @objc func clearAction(){
         self.locationManager.stopUpdatingLocation()
         self.locationManager.delegate = nil
         self.displayLabel.text = nil
     }
     
-    func reGeocodeAction(){
+    @objc func reGeocodeAction(){
         self.locationManager.requestLocation(withReGeocode: true, completionBlock: {location,regeocode,error -> Void in
             if (error != nil) {
                 print(error!)
@@ -81,7 +81,7 @@ class SingleLocaitonAloneViewController: BaseViewController ,AMapLocationManager
         })
     }
     
-    func locAction(){
+    @objc func locAction(){
     
         self.locationManager.requestLocation(withReGeocode: false, completionBlock: { location, regeocode, error -> Void in
             if (error != nil) {

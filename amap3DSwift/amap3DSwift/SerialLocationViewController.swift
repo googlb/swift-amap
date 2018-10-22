@@ -55,7 +55,7 @@ class SerialLocationViewController: BaseViewController,MAMapViewDelegate ,AMapLo
         self.setToolbarItems([flexble,showItem,flexble], animated: true)
     }
     
-    func showSegmentAction(sender:UISegmentedControl){
+    @objc func showSegmentAction(sender:UISegmentedControl){
         if sender.selectedSegmentIndex == 1 {
             self.locationManager.stopUpdatingLocation()
             self.mapView.removeAnnotations(self.mapView.annotations)
@@ -66,7 +66,7 @@ class SerialLocationViewController: BaseViewController,MAMapViewDelegate ,AMapLo
     }
     
     //MARK:- AMapLocationManager Delegate
-    func amapLocationManager(_ manager: AMapLocationManager!, didFailWithError error: Error!) {
+    func amapLocationManager(_ manager: AMapLocationManager!, didFailWithError error: Error) {
         print(" amapLoctionManager error\(error)")
     }
     

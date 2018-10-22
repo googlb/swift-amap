@@ -63,13 +63,13 @@ class SingleLocationViewController: BaseViewController,MAMapViewDelegate,AMapSea
         self.setToolbarItems([flexble,reGeocodeItem,flexble,locItem], animated: true)
     }
     
-    func clearAction(){
+    @objc func clearAction(){
         self.locationManager.stopUpdatingLocation()
         self.locationManager.delegate = nil
         self.mapView.removeAnnotations(self.mapView.annotations)
     }
     
-    func reGeocodeAction(){
+    @objc func reGeocodeAction(){
         self.mapView.removeAnnotations(self.mapView.annotations)
         self.locationManager.requestLocation(withReGeocode: true, completionBlock: {location,regeocode,error -> Void in
             if (error != nil) {
@@ -88,7 +88,7 @@ class SingleLocationViewController: BaseViewController,MAMapViewDelegate,AMapSea
         })
     }
     
-    func locAction(){
+    @objc func locAction(){
         self.mapView.removeAnnotations(self.mapView.annotations)
         self.locationManager.requestLocation(withReGeocode: false, completionBlock: { location, regeocode, error -> Void in
             if (error != nil) {
